@@ -84,6 +84,7 @@ int main(int argc, char **argv){
   ///Display
   bool displayBool;
   nh.param<bool>("displayBool", displayBool, false);
+  
   /*#############################
     ##     Class instances     ##
     #############################*/
@@ -135,6 +136,7 @@ int main(int argc, char **argv){
 
     if(termalCamera->getImageReady()==1  && termalCamera->getConfigReady() ){
       artugaMarker::detector(visualCamera->getImage()->image, visualMarker,nMarkers,visualCamera->getCameraMatrix(),visualCamera->getDistCoeffs(),"VisualDisplay",displayBool);
+    
     }
 
 
@@ -142,6 +144,7 @@ int main(int argc, char **argv){
       cv::Mat termalImage;
       cv::bitwise_not(termalCamera->getImage()->image,termalImage);
       artugaMarker::detector(termalImage,termalMarker,nMarkers,termalCamera->getCameraMatrix(),termalCamera->getDistCoeffs(),"TermalDisplay",displayBool);
+      
     }
 
 

@@ -36,7 +36,7 @@ include_directories(
 
 )
 
-add_executable(rosnode_artuga src/rosnode_artuga.cpp)
+add_executable(rosnode_artuga src/rosnode_artuga.cpp src/camera/camera.cpp src/artugaMarker/artugaMarker.cpp)
 
 target_link_libraries(rosnode_artuga ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
