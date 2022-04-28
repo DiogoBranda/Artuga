@@ -36,9 +36,9 @@ include_directories(
 
 )
 
-##add_executable(arucoDetect src/arucodetecter/arucoDetect.cpp src/arucodetecter/camera.cpp src/arucodetecter/myaruco.cpp src/arucodetecter/arucopattern.cpp)
+add_executable(rosnode_artuga src/rosnode_artuga.cpp)
 
-##target_link_libraries(arucoDetect ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+target_link_libraries(rosnode_artuga ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
 
 

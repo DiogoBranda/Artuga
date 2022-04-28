@@ -29,3 +29,33 @@
   SOFTWARE.
 
 **/
+
+/*#####################
+  ##     Includes    ##
+  #####################*/
+
+#include <ros/ros.h>
+
+
+
+int main(int argc, char **argv){
+
+  /*######################
+    ##     Node Init    ##
+    ######################*/
+
+  ros::init(argc, argv, "rosnode_artuga");
+
+  ros::NodeHandle  n; // Node
+  ros::NodeHandle nh("~"); //Priv node
+
+  ros::Rate rate(10.0);
+
+  /*#############################
+    ##     Class instances     ##
+    #############################*/
+
+}
+
+
+
