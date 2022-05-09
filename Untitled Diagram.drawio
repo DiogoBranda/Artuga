@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-09T13:36:11.978Z" agent="5.0 (X11)" etag="sLWsyquMHQCpU4YTzdXf" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-09T13:38:10.256Z" agent="5.0 (X11)" etag="6Mq-7vqtxQP0qTIfOsH0" version="18.0.2" type="github">
   <diagram id="RqrXdju8FesGx1iqN-Xo" name="Page-1">
-    <mxGraphModel dx="796" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="549" dy="301" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           <mxGeometry x="680" y="160" width="160" height="90" as="geometry" />
         </mxCell>
         <mxCell id="iQozIhsFL5ffFYy9EkJB-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;camera&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ cameraParamName: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ cameraMatrix: cv::Mat&lt;br&gt;+ distCoeffs: cv::Mat &lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ image: cv_bridge::CvImagePtr ;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ cb_camParam(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ cb_camImg(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getCameraMatrix(): cv::Mat&lt;br&gt;+ getDistCoeffs(): cv::Mat&lt;br&gt;+ getImage(): cv_bridge::CvImagePtr&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry y="320" width="180" height="270" as="geometry" />
+          <mxGeometry y="320" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="iQozIhsFL5ffFYy9EkJB-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;lidar&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ cloud: CloudType::Ptr&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ cb_cloud(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getCloud(): CloudType::Ptr&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="320" width="160" height="90" as="geometry" />
