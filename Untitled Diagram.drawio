@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-09T10:02:13.915Z" agent="5.0 (X11)" etag="5anKdoCUqrrX-xszfe8_" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-09T10:40:14.107Z" agent="5.0 (X11)" etag="iaPrJcixW5pwlSGOIQTm" version="18.0.2" type="github">
   <diagram id="RqrXdju8FesGx1iqN-Xo" name="Page-1">
     <mxGraphModel dx="549" dy="301" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -9,6 +9,12 @@
         </mxCell>
         <mxCell id="iQozIhsFL5ffFYy9EkJB-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;sensor&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="160" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iQozIhsFL5ffFYy9EkJB-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;artugaMarker&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iQozIhsFL5ffFYy9EkJB-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;detectBy&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="160" width="160" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
