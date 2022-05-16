@@ -35,26 +35,24 @@
 #define ARTUGAMARKER_H
 
 #include <string>
-#include<Eigen/Eigen>
-#include<Eigen/Core>
-#include<Eigen/Geometry>
+#include <Eigen/Eigen>
+#include <Eigen/Core>
+#include <Eigen/Geometry>
 #include <geometry_msgs/PoseStamped.h>
 #include <tf/transform_listener.h>
-#include<eigen_conversions/eigen_msg.h>
+#include <eigen_conversions/eigen_msg.h>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/opencv.hpp>
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/aruco.hpp>
+ 
 
 class artugaMarker
 {
   private:
     int id;
     float size;
-    geometry_msgs::PoseStamped poseAruco;
-    bool state;
-
 
   public:
 
@@ -92,24 +90,11 @@ class artugaMarker
      * @return aruco size (float)
      */
     float getSize();
+    
+  
+    static void estimatePose();
 
 
-    /**
-     * @brief getState - provides the aruco state
-     * @return aruco state, 0 if not detect 1 if is detect (bool)
-     */
-    bool getState();
-
-    /**
-     * @brief detector given an image it detects the arucos an estimate the position,
-     * then stores on the variable aruco passe on the function.
-     * @param img - image to try detect the arucos (cv::Mat)(in)
-     * @param aruco - aruco variable where the positions of arucos that where detect will be stored (arucoCras **)(out)
-     * @param n - number of arucos on that exist (int)(in)
-     * @param cameraMatrix - camera matrix (cv::Mat)(in)
-     * @param distCoeffs -  camera distorcion values (cv::Mat)(in)
-     */
-    static void detector(cv::Mat img, artugaMarker **aruco, int n, cv::Mat cameraMatrix, cv::Mat distCoeffs ,std::string display,bool flag);
 
 };
 
