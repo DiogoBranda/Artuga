@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <time.h>
+#include <netdb.h>
 #define PORT 8080
  
 int main(int argc, char const* argv[])
@@ -23,21 +24,34 @@ int main(int argc, char const* argv[])
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(PORT);
  
+    //serv_addr.sin_addr.s_addr = inet_addr("10.42.0.76");
     // Convert IPv4 and IPv6 addresses from text to binary
     // form
-    if (inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr)
-        <= 0) {
-        printf(
-            "\nInvalid address/ Address not supported \n");
-        return -1;
-    }
- 
-    if (connect(sock, (struct sockaddr*)&serv_addr,
-                sizeof(serv_addr))
-        < 0) {
-        printf("\nConnection Failed \n");
-        return -1;
-    }
+
+    struct hostent *hp;
+    hp = gethostbyname("10.42.0.76"); 
+    if (hp == 0) { 
+	printf("asdasdasdasd"); 
+	return -1; 
+    } 
+  
+  bcopy(hp->h_addr, &serv_addr.sin_addr, hp->h_length); 
+  serv_addr.sin_family = AF_INET; 
+  serv_addr.sin_port = htons(8080);  ; 
+
+  int n = connect(sock, (struct sockaddr *)&serv_addr,
+	      sizeof (serv_addr));
+  
+  
+  if(n == -1)
+  {
+      perror("E803 connect returned:");
+      close(sock);
+      sock = -1;
+      return -1;
+  }
+  
+
     
     printf("Sending message \n");
 
